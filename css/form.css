@@ -1,0 +1,79 @@
+:root{
+  --form-outline-color: rgb(170, 112, 73);
+  --form-valid-outline-color: rgb(50, 180, 24);
+  --form-invalid-outline-color: rgb(231, 43, 29);
+  --button-color: rgb(192, 143, 53);
+  --button-glow-color: rgb(216, 172, 89);
+  --input-bg-color: rgb(235, 205, 165);
+  --checked-color: rgb(179, 163, 24);
+}
+
+form{
+  font-family: 'Courgette', cursive;
+}
+.form-control, .form-select, .input-group-text, .form-check-input{
+  background-color: var(--input-bg-color);
+}
+.form-floating, .form-select, .form-floating>label{
+  color: var(--contrast-color);
+}
+.form-control, .form-select, .input-group-text{
+  border: 3px solid var(--form-outline-color) !important;
+}
+.is-valid{
+  border: 3px solid var(--form-valid-outline-color) !important;
+}
+.is-invalid{
+  border: 3px solid var(--form-invalid-outline-color) !important;
+}
+.input-group-text{
+  border-right: 0 !important;
+}
+.form-check{
+  margin: 0 0 1% 1%;
+}
+.form-check-input{
+  border-color: var(--input-bg-color);
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 1.25%;
+}
+.form-check-input:focus{
+  box-shadow: 0 0 0 0.2rem rgba(179, 163, 24, 0.25);
+  border-color: var(--input-bg-color);
+}
+.form-check-input:checked{
+  background-color: var(--checked-color);
+  border-color: var(--checked-color);
+}
+textarea{
+  height: 120px !important;
+}
+.invalid-feedback{
+  color: rgb(231, 16, 16);
+  font-size: 1.1rem;
+  margin: 0.75% 5% 0;
+}
+#pizzaerror{
+  margin-left: 1%;
+}
+.form-label{
+  font-size: 1.25rem;
+}
+.submit{
+  color: var(--accent-color);
+  background-color: var(--button-color);
+  font-size: 1.5rem;
+  text-align: center;
+  border: 0;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  width: auto;
+  margin: 0 1%;
+  padding: 10px 8px;
+  transition: all 0.2s ease-out;
+}
+.submit:hover, .submit:focus{
+  color: var(--glow-color);
+  background-color: var(--button-glow-color);
+}
